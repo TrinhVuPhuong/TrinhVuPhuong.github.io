@@ -448,7 +448,7 @@ maker();
 
 
 window.print();
-if(obj['thietbi']='computer'){
+if(obj['thietbi']=='computer'){
     window.addEventListener('afterprint', function() {
     window.close();
 });
