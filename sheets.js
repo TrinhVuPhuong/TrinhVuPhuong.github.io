@@ -446,11 +446,10 @@ function maker() {
 }
 maker();
 
-var currentURL = window.location.href;
-var myWindow = window.open(currentURL);
+
 window.print();
 if(obj['thietbi']='computer'){
-    myWindow.addEventListener('afterprint', function() {
-    myWindow.close();
+    window.addEventListener('afterprint', function() {
+    window.close();
 });
 }
