@@ -69,11 +69,11 @@ function titleCase(str) {
     
     return result.join(' ');
   }
-
+var obj = getAllUrlParams();
 const output = document.querySelector('body');
 function maker() {
 
-    var obj = getAllUrlParams();
+
 
     console.log(obj);
     
@@ -436,3 +436,9 @@ function maker() {
  
 }
 maker();
+window.print();
+if(obj['thietbi']=='computer'){
+window.addEventListener('afterprint', function() {
+    window.close(); // Đóng trang sau khi in
+});
+}
