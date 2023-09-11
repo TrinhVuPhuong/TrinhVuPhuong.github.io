@@ -36,6 +36,10 @@ p{
     max-width: 100%;
 }
 
+p.diachi{
+  max-width: 78%;
+}
+
 p.title{
    text-align:left;
    margin:0;
