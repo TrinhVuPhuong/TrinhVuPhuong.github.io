@@ -378,7 +378,7 @@ function maker() {
 
         table.append(tr);
     }
-
+    if (obj["tiencongthem"] != "0" ) {
         tr = document.createElement('tr');
 
             td = document.createElement('td');
@@ -394,8 +394,9 @@ function maker() {
             tr.append(td);
 
         table.append(tr);   
+    }
 
-
+    if (obj["thanhtien"] != "0" ) {
         tr = document.createElement('tr');
 
             td = document.createElement('td');
@@ -411,8 +412,8 @@ function maker() {
             tr.append(td);
 
         table.append(tr);    
-
-
+    }
+    if (obj["nocon"] != "0" ) {
         tr = document.createElement('tr');
 
             td = document.createElement('td');
@@ -425,12 +426,33 @@ function maker() {
             td = document.createElement('td');
             td.setAttribute("class", "content");
             td.textContent=  x + " đ";
+                tr.append(td);
+    
+            table.append(tr);
+    
+        table.append(tr);
+    }
+
+    if (obj["ghichu"] != "" ) {
+        tr = document.createElement('tr');
+
+            td = document.createElement('td');
+            td.setAttribute("class", "title");
+            td.textContent="ghichu";
             tr.append(td);
 
+            x = obj['ghichu'];
+            //x = x.toLocaleString('en-US');
+            td = document.createElement('td');
+            td.setAttribute("class", "content");
+            td.textContent=  x;
+                tr.append(td);
+    
+            table.append(tr);
+    
         table.append(tr);
-
-    table.append(tr);
-
+    }
+    
         
     output.append(table);
 
