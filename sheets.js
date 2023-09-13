@@ -378,7 +378,7 @@ function maker() {
 
         table.append(tr);
     }
-    if (obj["tiencongthem"] != "0" ) {
+    if (obj["tiencongthem"] != "0" || obj["tiencongthem"] != "" ) {
         tr = document.createElement('tr');
 
             td = document.createElement('td');
@@ -396,7 +396,7 @@ function maker() {
         table.append(tr);   
     }
 
-    if (obj["thanhtien"] != "0" ) {
+    if (obj["thanhtien"] != "0" || obj["thanhtien"] != "" ) {
         tr = document.createElement('tr');
 
             td = document.createElement('td');
@@ -413,7 +413,7 @@ function maker() {
 
         table.append(tr);    
     }
-    if (obj["nocon"] != "0" ) {
+    if (obj["nocon"] != "0" || obj["nocon"] != "" ) {
         tr = document.createElement('tr');
 
             td = document.createElement('td');
@@ -435,7 +435,7 @@ function maker() {
 
     output.append(table);
 
-  if (obj["ghichu"] != "" ) {
+  if (obj["ghichu"] != "") {
         p=document.createElement('p');
         p.setAttribute("class","title");
         p.textContent="Ghi chú: " + decodeURIComponent(obj['ghichu']);
