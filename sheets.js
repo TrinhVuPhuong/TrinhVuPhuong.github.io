@@ -251,7 +251,7 @@ function maker() {
 
         table.append(tr);
 
-      if (obj["tongno"] != "0" ) {
+      if (obj["tongno"] != "0" && (obj["tiennocu"] != "0" || obj["tiennocu"] != "") ) {
 
         /////////Tổng nợ////////////////
         
