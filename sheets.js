@@ -433,28 +433,15 @@ function maker() {
         table.append(tr);
     }
 
-    if (obj["ghichu"] != "" ) {
-        tr = document.createElement('tr');
-
-            td = document.createElement('td');
-            td.setAttribute("class", "title");
-            td.textContent="ghichu";
-            tr.append(td);
-
-            x = decodeURIComponent(obj['ghichu']);
-            //x = x.toLocaleString('en-US');
-            td = document.createElement('td');
-            td.setAttribute("class", "content");
-            td.textContent=  x;
-                tr.append(td);
-    
-            table.append(tr);
-    
-        table.append(tr);
-    }
-    
-        
     output.append(table);
+
+  if (obj["ghichu"] != "" ) {
+        p=document.createElement('p');
+        p.setAttribute("class","title");
+        p.textContent="Ghi chú: " + decodeURIComponent(obj['ghichu']);
+        output.append(p);
+        
+    }
 
     p=document.createElement('p');
     p.setAttribute("class","footer");
