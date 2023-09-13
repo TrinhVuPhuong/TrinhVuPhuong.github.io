@@ -441,7 +441,7 @@ function maker() {
             td.textContent="ghichu";
             tr.append(td);
 
-            x = obj['ghichu'];
+            x = decodeURIComponent(obj['ghichu']);
             //x = x.toLocaleString('en-US');
             td = document.createElement('td');
             td.setAttribute("class", "content");
