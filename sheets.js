@@ -438,7 +438,7 @@ function maker() {
   if (obj["ghichu"] != "") {
         p=document.createElement('p');
         p.setAttribute("class","title");
-        p.textContent="Ghi chú: " + decodeURIComponent(obj['ghichu']);
+        p.textContent="Ghi chú: " + decodeURIComponent(obj['ghichu']).toUpperCase();
         output.append(p);
         
     }
