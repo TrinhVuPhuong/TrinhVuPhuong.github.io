@@ -396,7 +396,7 @@ function maker() {
         table.append(tr);   
     }
 
-    if (obj["thanhtien"] != "0" && obj["thanhtien"] != "" ) {
+    
         tr = document.createElement('tr');
 
             td = document.createElement('td');
@@ -412,7 +412,7 @@ function maker() {
             tr.append(td);
 
         table.append(tr);    
-    }
+    
     if (obj["nocon"] != "0" && obj["nocon"] != "" ) {
         tr = document.createElement('tr');
 
