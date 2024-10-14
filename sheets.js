@@ -407,7 +407,7 @@ function maker() {
             x = obj['thanhtien'];
             //x = x.toLocaleString('en-US');
             td = document.createElement('td');
-            td.setAttribute("class", "content");
+            td.setAttribute("class", "content2");
             td.textContent=  x + " đ";
             tr.append(td);
 
